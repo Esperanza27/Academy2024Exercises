@@ -1,39 +1,42 @@
 ﻿
+using Academy2024ExerciseConditional;
 using System.Collections.Generic;
 
 /*  creare un programma nel quale vengono presi in input due numeri dall'utente,
 dopodiché dire all'utente (tramite Console.Write o WrileLine) quale tra i due è il maggiore o se sono uguali
 */
+int firstNumber = Utils.AskForInt("Insert first number: ");
+int secondNumber = Utils.AskForInt("Insert second number: ");
 
+/*
 int firstNumber;
-bool isNum1Valid;
+bool isValid;
 
 do
 {
     Console.Write("Insert first number: ");
-    isNum1Valid = int.TryParse(Console.ReadLine(), out firstNumber);
-    if (!isNum1Valid)
+    isValid = int.TryParse(Console.ReadLine(), out firstNumber);
+    if (!isValid)
     {
         Console.WriteLine("the number invalid");
     }
 }
-while (!isNum1Valid);
+while (!isValid);
 
 int secondNumber;
-bool isNum2Valid;
 
 do
 {
     Console.Write("Insert second number: ");
     string secondNumberInput = Console.ReadLine();
-    isNum2Valid = int.TryParse(secondNumberInput, out secondNumber);
-    if (!isNum2Valid)
+    isValid = int.TryParse(secondNumberInput, out secondNumber);
+    if (!isValid)
     {
         Console.WriteLine("the number invalid");
     }
 }
-while (!isNum2Valid);
-
+while (!isValid);
+*/
 
 if (firstNumber > secondNumber)
 {
